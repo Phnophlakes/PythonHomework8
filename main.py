@@ -29,7 +29,11 @@ if game == "Yes":
     if secret == guess:
         print("well done! You guessed right!")
     else:
-        print("oh thats wrong! You lost!")
-
+        print("oh that is wrong! You lost!")
+        chance = int(input("But you will get a second chance! Hint the number is between 5 and 10: "))
+        if secret == chance:
+            print("Well done, that is correct!")
+        else:
+            print("Sorry you lost again")
 else:
     print("Bye then!")
